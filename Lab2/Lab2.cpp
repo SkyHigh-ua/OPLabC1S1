@@ -6,7 +6,7 @@ int main()
     float x, y;
     std::cout << "Введіть координати точки: ";
     std::cin >> x >> y;
-    if (x >= -1 & y <= 1 & y >= abs(x))
+    if (x >= -1 && y <= 1 && y >= abs(x))
     {
         std::cout << "Точка належить" << std::endl;
     }
