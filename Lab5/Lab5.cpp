@@ -3,10 +3,14 @@
 
 int main()
 {
-    for (int i = 1000; i <= 9999; i++)
+    int i , i1, i2, i3, i4;
+    for (i = 1000; i <= 9999; i++)
     {
-        std::string n = std::to_string(i);
-        if (n[0]==n[3] && n[1]==n[2])
+        i1 = i mod 10
+        i2 = i mod 100 div 10
+        i3 = i div 100 mod 10
+        i4 = i div 1000
+        if (i1==i4 && i2==i3)
         {
             std::cout << i << '\n';
         }
