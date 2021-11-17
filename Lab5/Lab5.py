@@ -7,3 +7,10 @@ for i in range (1000, 10000):
         print(i)
     else:
         continue
+'''
+Виправлений варіант
+for i in range(1, 10):
+    for j in range(10):
+        res = i * 1001 + j * 110
+        print( res )
+'''
