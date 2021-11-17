@@ -20,3 +20,18 @@ int main()
     }
     return 0;
 }
+/*
+Виправлений варіант
+{
+    int i , j, res;
+    for (i = 1; i <= 9; i++)
+    {
+        for (j = 0; j <= 9; j++)
+            {
+                res = i * 1001 + j * 110;
+                std::cout << res << std::endl;
+            }
+    }
+    return 0;
+}
+*/
