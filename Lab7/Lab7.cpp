@@ -28,7 +28,7 @@ void crlst(double lst[], int len)
     srand(time(NULL));
     for (int i=0; i<len; i++)
         {
-            lst[i] = (rand()%101 - rand()%101) + double (rand()%101)/1000; 
+            lst[i] = double (rand())/RAND_MAX*201 + -100; 
         }
 }
 
