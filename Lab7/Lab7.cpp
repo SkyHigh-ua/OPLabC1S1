@@ -13,6 +13,11 @@ int main()
     double s;
     std::cout << "Введіть розмір масиву = ";
     std::cin >> len;
+    if (len<2)
+    {
+        std::cout << "Розмір масиву має бути більше 2" << std::endl;
+        return 0;
+    }
     double lst[len];
     crlst(lst, len);
     lstout(lst, len, 0);
@@ -28,7 +33,7 @@ void crlst(double lst[], int len)
     srand(time(NULL));
     for (int i=0; i<len; i++)
         {
-            lst[i] = double (rand())/RAND_MAX*201 + -100; 
+            lst[i] = double (rand())/RAND_MAX*200 + -100;
         }
 }
 
